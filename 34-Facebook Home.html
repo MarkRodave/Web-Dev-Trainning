@@ -1,0 +1,1159 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Facebook</title>
+    <link rel="shortcut icon" href="https://web.archive.org/web/20190101000005im_/https://static.xx.fbcdn.net/rsrc.php/yz/r/KFyVIAWzntM.ico">
+    <style media="screen">
+        body,
+        button,
+        input,
+        label,
+        select,
+        td,
+        textarea {
+            font-family: Helvetica, Arial, sans serif;
+            font-size: 12px;
+        }
+        
+        input {
+            -webkit-writing-mode: horizontal-tb !important;
+            text-rendering: auto;
+            color: -internal-light-dark(black, white);
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-align: start;
+            appearance: textfield;
+            background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+            -webkit-rtl-ordering: logical;
+            cursor: text;
+            margin: 0em;
+            font: 400 13.3333px Arial;
+            padding: 1px 2px;
+            border-width: 2px;
+            border-style: inset;
+            border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+            border-image: initial;
+        }
+        
+        div {
+            display: inline-block;
+            font-family: inherit;
+        }
+        
+        body {
+            background: #fff;
+            color: #1d2129;
+            direction: ltr;
+            line-height: 1.34;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            width: 100%;
+            background-color: #3b5998;
+            background-image: linear-gradient(#4e69a2, #3b5998 50%);
+            border-bottom: 1px solid #133783;
+            min-height: 42px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .logosearch {
+            margin: 5px 0px 5px 50px;
+            vertical-align: middle;
+        }
+        
+        .logo {
+            padding: 0px 15px 0px 5px;
+            vertical-align: middle;
+        }
+        
+        .search {
+            vertical-align: middle;
+            width: 350px;
+            height: 20px;
+        }
+        
+        .searchbtn {
+            vertical-align: middle;
+            width: 35px;
+            height: 20px;
+            margin-left: -5px;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        li {
+            float: left;
+            vertical-align: middle;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            /*padding: 14px 16px;*/
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+        }
+        
+        .toleft {
+            float: left;
+        }
+        
+        .toright {
+            float: right;
+        }
+        
+        .menusizing {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: 20px;
+            vertical-align: middle;
+            min-height: 37px;
+            position: relative;
+        }
+        
+        .pad {
+            padding-top: 9px;
+            padding-bottom: 9px;
+        }
+        
+        .circleimg {
+            border-radius: 50%;
+            background-color: white;
+            vertical-align: middle;
+        }
+        
+        .splitter {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 17px;
+            color: gray;
+        }
+        
+        .menulogos {
+            padding: 2px 2px 0px 2px;
+            margin: 0px;
+            vertical-align: middle;
+        }
+        
+        .dropdown-btn {
+            color: lightgrey;
+            vertical-align: bottom;
+            text-align: left;
+            margin-left: -20px;
+        }
+        
+        .dropdown:hover .dropdown-container {
+            display: block;
+        }
+        
+        .dropdown-btn:active .dropdown-container {
+            display: block;
+        }
+        
+        .dropdown-container {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border-radius: 20px;
+            width: 200px;
+            top: 25;
+            right: 1;
+        }
+        
+        .dropdown-content {
+            width: 95%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 7px;
+            margin-left: 7px;
+        }
+        
+        .dropdown-content-text {
+            padding: 10px;
+            font-size: small;
+            font-weight: 700;
+            width: 90%;
+        }
+        
+        .text-left {
+            text-align: left;
+        }
+        
+        .content-container {
+            background-color: #e9ebee;
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+        
+        .table-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .tbl-profile-con {
+            width: 20%;
+            height: 100%;
+        }
+        
+        .tbl-news-con {
+            width: 60%;
+            height: 100%;
+        }
+        
+        .tbl-ads-con {
+            width: 20%;
+            height: 100%;
+        }
+        
+        .profile-container {
+            width: auto;
+            height: 100%;
+            display: inline-table;
+            padding-left: 45px;
+            padding-top: 15px;
+        }
+        
+        .news-container {
+            width: auto;
+            height: 100%;
+            display: table;
+            padding-top: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .ads-container {
+            width: auto;
+            height: 100%;
+            display: table;
+            padding-top: 15px;
+        }
+        
+        .profile-list {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        
+        .profile-links {
+            text-decoration: none;
+            color: rgb(58, 58, 58);
+        }
+        
+        tr.profile-side {
+            vertical-align: middle;
+            color: rgb(58, 58, 58);
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .special-character {
+            text-align: center;
+            vertical-align: middle;
+            color: rgb(58, 58, 58);
+            font-weight: 600;
+        }
+        
+        .profile-header {
+            padding-top: 10px;
+            padding-bottom: 4px;
+            font-weight: 800;
+        }
+        
+        .see-more:hover {
+            color: #133783;
+            text-decoration: underline;
+        }
+        
+        .see-more-color:hover {
+            color: #133783;
+        }
+        
+        .card {
+            border: 1px solid #b5b7bb;
+            border-radius: 10px;
+            background-color: white;
+            width: 100%;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+        }
+        
+        .create-post {
+            width: 99%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            background-color: #c8cacc;
+            border-bottom: 3px solid gray;
+        }
+        
+        .creating-post {
+            vertical-align: middle;
+            width: 99%;
+            padding-top: 8px;
+            padding-left: 5px;
+            padding-bottom: 8px;
+        }
+        
+        textarea {
+            border-style: none;
+            border-color: Transparent;
+            overflow: auto;
+            resize: none;
+            width: 89%;
+        }
+        
+        .create-divider {
+            text-align: center;
+            width: 95%;
+            border: 1px solid gray;
+        }
+        
+        .posting-options {
+            vertical-align: middle;
+            width: 99%;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 5px;
+        }
+        
+        .btn-posting-options {
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 10px;
+            background-color: #c8cacc;
+            box-sizing: content-box;
+            border: none;
+            padding: 5px;
+        }
+        
+        .otherbtn {
+            text-align: center;
+            vertical-align: middle;
+            background-color: #c8cacc;
+            border-radius: 10px;
+            box-sizing: content-box;
+            border: none;
+            padding: 5px;
+            width: 20px;
+            height: 18px;
+        }
+        
+        .stories-header {
+            color: rgb(58, 58, 58);
+            font-weight: 800;
+            width: 98%;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        .stories-link {
+            color: #133783;
+            font-weight: 400;
+            text-decoration: none;
+            float: right;
+            padding-right: 10px;
+        }
+        
+        .stories-link:hover {
+            text-decoration: underline;
+        }
+        
+        .stories-container {
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+        
+        .stories-logo-container {
+            position: absolute;
+            padding-top: 7px;
+            padding-left: 7px;
+        }
+        
+        .stories-logo {
+            height: 35px;
+            border-radius: 50%;
+            border: 5px solid royalblue;
+            background-color: white;
+        }
+        
+        .stories-logo-mine {
+            border-radius: 50%;
+            height: 35px;
+            background-color: white;
+            overflow: hidden;
+        }
+        
+        .stories-logo-container-mine {
+            position: absolute;
+            padding-top: 10px;
+            padding-left: 7px;
+        }
+        
+        .stories-content-container {
+            height: 250px;
+        }
+        
+        .stories-content-img {
+            object-fit: contain;
+            height: 250px;
+            border-radius: 10px;
+        }
+        
+        .stories-name-container {
+            position: absolute;
+            color: white;
+            font-weight: bolder;
+            vertical-align: bottom;
+        }
+        
+        .logocircle {
+            height: 35px;
+            border-radius: 50%;
+        }
+        
+        .post-container {
+            width: 97%;
+            height: auto;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .post-header {
+            vertical-align: middle;
+            width: 100%;
+        }
+        
+        .profile-name-container {
+            width: 91%;
+            padding-top: 2px;
+            float: right;
+        }
+        
+        .option-btn {
+            float: right;
+        }
+        
+        .profile-name {
+            color: royalblue;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        .profile-name:hover {
+            text-decoration: underline;
+        }
+        
+        .post-content-text {
+            padding-left: 4px;
+            padding-right: 4px;
+            font-weight: 600;
+        }
+        
+        .post-content-image {
+            width: 99%;
+        }
+        
+        .post-content-image-container {
+            width: 100%;
+        }
+        
+        .post-content-video {
+            width: 99%;
+        }
+        
+        .post-react-output {
+            vertical-align: middle;
+            width: 98%;
+            padding-left: 4px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        
+        .comment-btn-container {
+            padding-top: 1px;
+            padding-bottom: 1px;
+            width: 100%;
+        }
+        
+        .comment-btn-list {
+            width: 32%;
+        }
+        
+        .comment-btn-text {
+            color: rgb(58, 58, 58);
+            vertical-align: middle;
+            font-weight: 700;
+        }
+        
+        .cmnt-btn-txt {
+            vertical-align: middle;
+        }
+        
+        .comment-area-container {
+            width: 100%;
+            vertical-align: middle;
+        }
+        
+        .comment-textarea-container {
+            border: 2px solid gray;
+            border-radius: 25px;
+            width: 90%;
+        }
+        
+        .write-comment {
+            padding-left: 2px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        
+        .btn-comment-design {
+            border-radius: 50%;
+            width: 33px;
+        }
+        
+        .link {
+            color: rgb(58, 58, 58);
+            text-decoration: none;
+        }
+        
+        .link:hover {
+            text-decoration: underline;
+        }
+        
+        .comment-header-footer {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 99%;
+        }
+        
+        .comment-content-container {
+            padding: 2px;
+        }
+        
+        .comment-content {
+            background-color: #c8cacc;
+            vertical-align: middle;
+            padding: 3px;
+            border-radius: 10px;
+        }
+        
+        .smaller {
+            font-size: 3px;
+        }
+        
+        .ads-container-position {
+            margin-right: 12px;
+        }
+        
+        .ads-inner-container {
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 95%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <!--logo search-->
+        <div class="logosearch">
+            <img class="logo" src="https://www.freeiconspng.com/uploads/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png" width="35px" alt="">
+            <div class="">
+                <input class="search" type="text" name="search" placeholder="Search">
+                <button class="searchbtn" type="button" name="search"><img src="https://www.freeiconspng.com/uploads/search-icon-png-10.png" width="15"></button>
+            </div>
+        </div>
+        <!--menu-->
+        <div class="toright menusizing">
+            <ul>
+                <li>
+                    <img src="fbsrc/fbhome/Yoru.png" class="circleimg" height="35px">
+                    <a href="#Profile"> Mark Rodave</a>
+                </li>
+                <li class="splitter">
+                    |
+                </li>
+                <li class="pad">
+                    <a href="#Home"> Home </a>
+                </li>
+                <li class="splitter">
+                    |
+                </li>
+                <li class="pad">
+                    <a href="#Create"> Create </a>
+                </li>
+                <li class="splitter">
+                    |
+                </li>
+                <li class="pad menulogos">
+                    <a class="menulogos" href="#friends">
+                        <img src="fbsrc/fbnew/tile023.png" alt="" height="25px">
+                    </a>
+                </li>
+                <li class="pad menulogos">
+                    <a class="menulogos" href="#messenger">
+                        <img src="fbsrc/fbnew/tile003.png" height="25px">
+                    </a>
+                </li>
+                <li class="pad menulogos">
+                    <a class="menulogos" href="#notification">
+                        <img class="menulogo" src="fbsrc/fbnew/tile010.png" height="25px">
+                    </a>
+                </li>
+                <li class="splitter">
+                    |
+                </li>
+                <li class="pad menulogos">
+                    <a class="menulogos" href="#notification">
+                        <img class="menulogo" src="fbsrc/help2.png" height="25px">
+                    </a>
+                </li>
+                <li class="dropdown pad" valign="middle">
+                    <a class="dropdown-btn" href="#dropdown"> &#x25BC; </a>
+                    <div class="dropdown-container">
+                        <div class="dropdown-content">
+                            <div class="dropdown-content-text">
+                                <a class="link text-left" href="#profile">Profile</a>
+                            </div>
+                            <div class="dropdown-content-text">
+                                <a class="link text-left" href="#profile">Give Feedback</a>
+                            </div>
+                            <div class="dropdown-content-text">
+                                <a class="link text-left" href="#profile">Switch Account</a>
+                            </div>
+                            <div class="dropdown-content-text">
+                                <a class="link text-left" href="#profile">Settings & Privacy</a>
+                            </div>
+                            <div class="dropdown-content-text">
+                                <a class="link text-left" href="#profile">Help & Support</a>
+                            </div>
+                            <div class="dropdown-content-text">
+                                <a class="link text-left" href="#profile">Display & Accessibility</a>
+                            </div>
+                            <div class="dropdown-content-text">
+                                <a class="link text-left" href="#profile">Log Out</a>
+                            </div>
+                            <div class="dropdown-content-text">
+                                <a class="link text-left" href="#profile">
+                                    <small>
+                                        Privacy · Terms · Advertising · Ad Choices · Cookies · More ·<br>Facebook &#169; 2019
+                                    </small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Content-->
+    <div class="content-container">
+        <table width="100%" height="100%">
+            <tr>
+                <!--Profile Side-->
+                <td class="tbl-profile-con">
+                    <div class="profile-container">
+                        <img src="fbsrc/fbhome/Yoru.png" class="circleimg" height="30px">
+                        <a class="profile-links" href="#Profile"> Mark Rodave</a>
+                        <br><br>
+                        <table>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/most_recent.png" height="30px"></td>
+                                <td>News Feed</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/messenger.png" height="30px"></td>
+                                <td>Messenger</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/watch.png" height="30px"></td>
+                                <td>Watch</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/marketplace.png" height="30px"></td>
+                                <td>Marketplace</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td class="profile-header" colspan="2">Shortcuts</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/group.png" height="30px"></td>
+                                <td>Tesda Web Dev</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/games.png" height="30px"></td>
+                                <td>League Community</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/games.png" height="30px"></td>
+                                <td>Valorant Community</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/group.png" height="30px"></td>
+                                <td>Programmers, Develo...</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/jobs.png" height="30px"></td>
+                                <td>GreenErin</td>
+                            </tr>
+                            <tr class="see-more-color profile-side">
+                                <td class="special-character">&#x25BC;</td>
+                                <td class="see-more">See More...</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td class="profile-header" colspan="2">Explore</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/covid_information_center.png" height="30px"></td>
+                                <td>Covid Information...</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/pages.png" height="30px"></td>
+                                <td>Pages</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/events.png" height="30px"></td>
+                                <td>Events</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/saved.png" height="30px"></td>
+                                <td>Saved</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td><img src="fbsrc/profile-tab/fundraiser.png" height="30px"></td>
+                                <td>Fundraisers</td>
+                            </tr>
+                            <tr class="profile-side">
+                                <td class="special-character see">&#x25BC;</td>
+                                <td class="see-more">See More...</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </td>
+                <!--News Feed-->
+                <td class="tbl-news-container" width="50%">
+                    <div class="news-container">
+                        <!--Post Card-->
+                        <div class="card">
+                            <div class="create-post">
+                                Create Post
+                            </div>
+                            <div class="creating-post">
+                                <img src="fbsrc/fbhome/Yoru.png" class="circleimg" height="45px" valign="top">
+                                <textarea class="toright" id="w3review" name="w3review" rows="4" cols="50" placeholder="What's on your mind Mark Rodave" valign="bottom"></textarea>
+                            </div>
+                            <div class="posting-options">
+                                <hr class="create-divider">
+                                <button class="btn-posting-options" valign="middle"><img src=" fbsrc/photo-video.png " width="20px" valign="middle"> Photo/Video</button>
+                                <button class="btn-posting-options" valign="middle"><img src="fbsrc/tag-friends.png " width="20px" valign="middle"> Tag Friends</button>
+                                <button class="btn-posting-options" valign="middle"><img src="fbsrc/feeling-activity.png " width="20px" valign="middle"> Feeling/Activ...</button>
+                                <button class="otherbtn" valign="middle">...</button>
+                            </div>
+
+                        </div>
+                        <br>
+                        <!--Stories-->
+                        <div class="card ">
+                            <div class="stories-header">
+                                Stories <a class="stories-link" href="#see-all-stories">See all</a>
+                            </div>
+
+                            <div class="stories-content">
+
+                                <div>
+                                    <div class="stories-logo-container-mine">
+                                        <img class="stories-logo-mine" src="fbsrc/to-story-logo.png">
+                                    </div>
+                                    <div style="padding-left: 5px;" class="stories-content-container">
+                                        <img class="stories-content-img" src="fbsrc/fbhome/stories_yoru.png">
+                                    </div>
+                                    <div class="stories-name-container" style="top: 460px;left: 250px;">
+                                        Add to Story
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="stories-logo-container">
+                                        <img class="stories-logo" src="fbsrc/fbhome/Jett.png">
+                                    </div>
+                                    <div class="stories-content-container">
+                                        <img class="stories-content-img" src="fbsrc/fbhome/stories_jett.jpg">
+                                    </div>
+                                    <div class="stories-name-container" style="top: 460px;left: 365px;">
+                                        Jett
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="stories-logo-container">
+                                        <img class="stories-logo" src="fbsrc/fbhome/Sage.png">
+                                    </div>
+                                    <div class="stories-content-container">
+                                        <img class="stories-content-img" src="fbsrc/fbhome/stories_sage_2.png">
+                                    </div>
+                                    <div class="stories-name-container" style="top: 460px;left: 479px;">
+                                        Sage
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="stories-logo-container">
+                                        <img class="stories-logo" src="fbsrc/fbhome/Viper.png">
+                                    </div>
+                                    <div class="stories-content-container">
+                                        <img class="stories-content-img" src="fbsrc/fbhome/stories_viper_2.png" left="259px">
+                                    </div>
+                                    <div class="stories-name-container" style="top: 460px;left: 600px;">
+                                        Viper
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <br>
+                        <!--1st post text only-->
+                        <div class="card ">
+                            <div class="post-container">
+                                <div class="post-header">
+                                    <img class="logocircle" src="fbsrc/fbhome/Yoru.png">
+                                    <div class="profile-name-container">
+                                        <a class="profile-name" href="#post-profile">Mark Rodave</a>
+                                        <a class="option-btn" href="#option"><img src="fbsrc/btn-option.png"></a>
+                                        <br> 1 min<b> · </b>
+                                        <img src="fbsrc/public.png">
+                                    </div>
+                                </div>
+                                <div class="post-content-text">
+                                    <p>During the development of this webpage. I was struggling on designing it because I have a minor perfectionism when it comes to my work and art. It hurts me when I didn't meet my expectations in creating this, thus even
+                                        though it is not the same as the real classic one. I did my best to make it like to the old one. </p>
+                                </div>
+                                <div class="post-react-output">
+                                    <img src="fbsrc/like.png">&nbsp;<img src="fbsrc/heart.png"> <a class="link" href="#2">2</a>
+                                </div>
+                                <div class="comment-btn-container">
+                                    <center>
+                                        <hr class="create-divider">
+                                        <ul>
+                                            <li class="comment-btn-list">
+                                                <a class="comment-btn-text" href="#like">
+                                                    <img valign="middle" src="fbsrc/btn-like.png">
+                                                    <font class="cmnt-btn-txt">Like</font>
+                                                </a>
+                                            </li>
+
+                                            <li class="comment-btn-list">
+                                                <a class="comment-btn-text" href="#comment">
+                                                    <img valign="middle" src="fbsrc/btn-comment.png">
+                                                    <font class="cmnt-btn-txt">Comment</font>
+                                                </a>
+                                            </li>
+                                            <li class="comment-btn-list">
+                                                <a class="comment-btn-text" href="#share">
+                                                    <img valign="middle" src="fbsrc/btn-share.png">
+                                                    <font class="cmnt-btn-txt">Share</font>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <hr class="create-divider">
+                                    </center>
+                                </div>
+                                <div class="comment-area-container">
+                                    <img class="logocircle" src="fbsrc/fbhome/Yoru.png">
+                                    <div class="comment-textarea-container">
+                                        <center>
+                                            <div>
+                                                <textarea class="write-comment" cols="37" rows="1" placeholder="Write a comment..."></textarea>
+                                            </div>
+                                            <div>
+
+                                                <ul>
+                                                    <li>
+                                                        <button class="btn-comment-design"><img class="" height="18px" src="fbsrc/cmnt-photo-btn.png"></button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="btn-comment-design"><img src="fbsrc/cmnt-emoji-btn.png"></button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="btn-comment-design"><img height="18px" src="fbsrc/cmnt-gif-btn.png"></button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="btn-comment-design"><img src="fbsrc/cmnt-sticker-btn.png"></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </center>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <!--2nd Post with pictures-->
+                        <div class="card ">
+                            <div class="post-container">
+                                <div class="post-header">
+                                    <img class="logocircle" src="fbsrc/fbhome/league-current-icon.jpg">
+                                    <div class="profile-name-container">
+                                        <a class="profile-name" href="#post-profile">League of Legends</a>
+                                        <a class="option-btn" href="#option"><img src="fbsrc/btn-option.png"></a>
+                                        <br> February 5S at 5:00 AM
+                                        <b> · </b>
+                                        <img src="fbsrc/public.png">
+                                    </div>
+                                </div>
+                                <div class="post-content-text">
+                                    <p>Join the celebration -- the Lunar Beast Event starts now!</p>
+                                </div>
+                                <div class="post-content-image-container">
+                                    <img class="post-content-image" src="fbsrc/fbhome/home-post.jpg">
+                                </div>
+                                <div class="post-react-output">
+                                    <img src="fbsrc/like.png">&nbsp;<img src="fbsrc/heart.png">&nbsp;<img src="fbsrc/wow.png"> <a class="link" href="#8k">8K</a> <a class="link toright" href="#8k">563 Comments 132 Shares</a>
+                                </div>
+                                <div class="comment-btn-container">
+                                    <center>
+                                        <hr class="create-divider">
+                                        <ul>
+                                            <li class="comment-btn-list">
+                                                <a class="comment-btn-text" href="#like">
+                                                    <img valign="middle" src="fbsrc/btn-like.png">
+                                                    <font class="cmnt-btn-txt">Like</font>
+                                                </a>
+                                            </li>
+
+                                            <li class="comment-btn-list">
+                                                <a class="comment-btn-text" href="#comment">
+                                                    <img valign="middle" src="fbsrc/btn-comment.png">
+                                                    <font class="cmnt-btn-txt">Comment</font>
+                                                </a>
+                                            </li>
+                                            <li class="comment-btn-list">
+                                                <a class="comment-btn-text" href="#share">
+                                                    <img valign="middle" src="fbsrc/btn-share.png">
+                                                    <font class="cmnt-btn-txt">Share</font>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <hr class="create-divider">
+                                    </center>
+                                </div>
+                                <div class="comment-area-container">
+                                    <img class="logocircle" src="fbsrc/fbhome/Yoru.png">
+                                    <div class="comment-textarea-container">
+                                        <center>
+                                            <div>
+                                                <textarea class="write-comment" cols="37" rows="1" placeholder="Write a comment..."></textarea>
+                                            </div>
+                                            <div>
+
+                                                <ul>
+                                                    <li>
+                                                        <button class="btn-comment-design"><img class="" height="18px" src="fbsrc/cmnt-photo-btn.png"></button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="btn-comment-design"><img src="fbsrc/cmnt-emoji-btn.png"></button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="btn-comment-design"><img height="18px" src="fbsrc/cmnt-gif-btn.png"></button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="btn-comment-design"><img src="fbsrc/cmnt-sticker-btn.png"></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="other-chat-container">
+                                    <div>
+                                        <div class="comment-header-footer">
+                                            <a class="link" href="prev-comments">See previous comments</a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img class="logocircle" src="fbsrc/fbhome/Yoru.png">
+                                            </div>
+                                            <div valign="top">
+                                                <div class="comment-content">
+                                                    <a class="profile-name" href="#profile"><b>Mark Rodave</b></a> Awesome
+                                                </div>
+                                                <br><small class="smaller">.</small><br>
+                                                <div>
+                                                    <a class="link" style="color: royalblue;" href="#comment">Like · Share · 10m</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-header-footer">
+                                            <a class="link" href="#more-comments">See more comments</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <!--3rd Post with videos-->
+                        <div class="card ">
+                            <div class="post-container">
+                                <div class="post-header">
+                                    <img class="logocircle" src="fbsrc/fbhome/league-current-icon.jpg">
+                                    <div class="profile-name-container">
+                                        <a class="profile-name" href="#post-profile">League of Legends</a>
+                                        <a class="option-btn" href="#option"><img src="fbsrc/btn-option.png"></a>
+                                        <br> September 17, 2020<b> · </b>
+                                        <img src="fbsrc/public.png">
+                                    </div>
+                                </div>
+                                <div class="post-content-text">
+                                    <p>
+                                        <b>
+                                            Take Over | Worlds 2020 Music Video
+                                        </b>
+                                        <br> Take Over. #Worlds2020 📺: <a class="link" href="https://youtu.be/KbNL9ZyB49c" target="_blank">https://youtu.be/KbNL9ZyB49c</a>
+                                        <br> Listen now on Spotify: <a class="link" href="https://ffm.to/lol-takeover-spotify">https://ffm.to/lol-takeover-spotify</a>
+                                    </p>
+                                </div>
+                                <div class="post-content-image-container">
+                                    <video class="post-content-video" controls preload="auto" src="fbsrc/fbhome/take-over-vid.mp4" poster="fbsrc/fbhome/takeover-poster-play.png"></video>
+                                </div>
+                                <div class="post-react-output">
+                                    <img src="fbsrc/like.png">&nbsp;<img src="fbsrc/heart.png">&nbsp;<img src="fbsrc/wow.png"> <a class="link" href="#8k">10M</a> <a class="link toright" href="#8k">1K Comments 500 Shares</a>
+                                </div>
+                                <div class="comment-btn-container">
+                                    <center>
+                                        <hr class="create-divider">
+                                        <ul>
+                                            <li class="comment-btn-list">
+                                                <a class="comment-btn-text" href="#like">
+                                                    <img valign="middle" src="fbsrc/btn-like.png">
+                                                    <font class="cmnt-btn-txt">Like</font>
+                                                </a>
+                                            </li>
+
+                                            <li class="comment-btn-list">
+                                                <a class="comment-btn-text" href="#comment">
+                                                    <img valign="middle" src="fbsrc/btn-comment.png">
+                                                    <font class="cmnt-btn-txt">Comment</font>
+                                                </a>
+                                            </li>
+                                            <li class="comment-btn-list">
+                                                <a class="comment-btn-text" href="#share">
+                                                    <img valign="middle" src="fbsrc/btn-share.png">
+                                                    <font class="cmnt-btn-txt">Share</font>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <hr class="create-divider">
+                                    </center>
+                                </div>
+                                <div class="comment-area-container">
+                                    <img class="logocircle" src="fbsrc/fbhome/Yoru.png">
+                                    <div class="comment-textarea-container">
+                                        <center>
+                                            <div>
+                                                <textarea class="write-comment" cols="37" rows="1" placeholder="Write a comment..."></textarea>
+                                            </div>
+                                            <div>
+
+                                                <ul>
+                                                    <li>
+                                                        <button class="btn-comment-design"><img class="" height="18px" src="fbsrc/cmnt-photo-btn.png"></button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="btn-comment-design"><img src="fbsrc/cmnt-emoji-btn.png"></button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="btn-comment-design"><img height="18px" src="fbsrc/cmnt-gif-btn.png"></button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="btn-comment-design"><img src="fbsrc/cmnt-sticker-btn.png"></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="other-chat-container">
+                                    <div>
+                                        <div class="comment-header-footer">
+                                            <a class="link" href="prev-comments">See previous comments</a>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img class="logocircle" src="fbsrc/fbhome/Yoru.png">
+                                            </div>
+                                            <div valign="top">
+                                                <div class="comment-content">
+                                                    <a class="profile-name" href="#profile"><b>Mark Rodave</b></a> Worth watching!!
+                                                </div>
+                                                <br><small class="smaller">.</small><br>
+                                                <div>
+                                                    <a class="link" style="color: royalblue;" href="#comment">Like · Share · 10m</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-header-footer">
+                                            <a class="link" href="#more-comments">See more comments</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </td>
+                <!--Ads-->
+                <td class="tbl-ads-container " width="30% ">
+                    <div class="ads-container ">
+                        <div class="ads-container-position">
+                            <div class="card">
+                                <div class="ads-inner-container">
+                                    <img src="fbsrc/bday.png" valign="middle"> <b>No birthday celebrants</b>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="ads-inner-container">
+                                    <b>Your Page (10) &#x25BC; <img class="toright" src="fbsrc/btn-option.png" ></b>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="fbsrc/footer-home.png">
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
